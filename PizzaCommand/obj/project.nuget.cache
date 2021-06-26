@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/FdafcvWrx5JxRUdPFJSx9HU3N/kzy8nauhVkPqjcKDpap7hPuG3AU3fme6x6UJUGwMxxfvm/xZGgWGDKgBFvg==",
+  "dgSpecHash": "UDl+9yKo+WyaOwUSpQJST39SmRCuvB1k55O/vQBxZ/GIhatoCBAjDyexY0UjcfzoiieEQdJdCK9ixXPWvoTVUw==",
   "success": true,
-  "projectFilePath": "/home/pondhub/PizzaCommand/PizzaCommand.csproj",
+  "projectFilePath": "/home/pondhub/coop-cqrs/PizzaCommand/PizzaCommand.csproj",
   "expectedPackageFiles": [
     "/home/pondhub/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/home/pondhub/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
