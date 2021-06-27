@@ -193,19 +193,19 @@
     ]
   },
   "packageFolders": {
-    "/home/pondhub/.nuget/packages/": {}
+    "/home/phu-ubuntu-rtx-on/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/pondhub/coop-cqrs/PizzaCommand/PizzaCommand.csproj",
+      "projectUniqueName": "/home/phu-ubuntu-rtx-on/Learning/coop-cqrs/PizzaCommand/PizzaCommand.csproj",
       "projectName": "PizzaCommand",
-      "projectPath": "/home/pondhub/coop-cqrs/PizzaCommand/PizzaCommand.csproj",
-      "packagesPath": "/home/pondhub/.nuget/packages/",
-      "outputPath": "/home/pondhub/coop-cqrs/PizzaCommand/obj/",
+      "projectPath": "/home/phu-ubuntu-rtx-on/Learning/coop-cqrs/PizzaCommand/PizzaCommand.csproj",
+      "packagesPath": "/home/phu-ubuntu-rtx-on/.nuget/packages/",
+      "outputPath": "/home/phu-ubuntu-rtx-on/Learning/coop-cqrs/PizzaCommand/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/pondhub/.nuget/NuGet/NuGet.Config"
+        "/home/phu-ubuntu-rtx-on/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
