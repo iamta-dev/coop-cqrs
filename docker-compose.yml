@@ -1,0 +1,22 @@
+version: "3.5"
+services:
+  pizza-proxy:
+    build:
+      context: .
+      dockerfile: PizzaProxy/Dockerfile
+    ports:
+      - 8000:80
+
+  pizza-query:
+    build:
+      context: .
+      dockerfile: PizzaQuery/Dockerfile
+    ports:
+      - 8001:80  
+
+  pizza-command:
+    build:
+      context: .
+      dockerfile: PizzaCommand/Dockerfile
+    ports:
+      - 8002:80
