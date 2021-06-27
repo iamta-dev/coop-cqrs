@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Mvc;
 using PizzaQuery.Models;
 using PizzaQuery.Services;
 
-namespace ContosoPizza.Controllers
+namespace PizzaQuery.Controllers
 {
     [ApiController]
-    [Route("pizza/[controller]")]
+    [Route("[controller]")]
     public class PizzaController : ControllerBase
     {
         public PizzaController()

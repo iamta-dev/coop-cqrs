@@ -1,8 +1,8 @@
-using ContosoPizza.Models;
+using PizzaQuery.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ContosoPizza.Services
+namespace PizzaQuery.Services
 {
     public static class PizzaService
     {
