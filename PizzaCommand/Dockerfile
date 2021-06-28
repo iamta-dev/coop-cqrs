@@ -1,17 +1,15 @@
-# Stage 1
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
-WORKDIR /app
-COPY /PizzaCommand /PizzaCommand
-RUN dotnet build /PizzaCommand
+WORKDIR /APP
 
-# Stage 2
-FROM build as publish
-WORKDIR /app
-RUN dotnet publish /PizzaCommand -c Release -o /app -r linux-x64
+COPY *.csproj ./
+RUN dotnet restore
 
-# Stage 3
+COPY . ./
+RUN dotnet publish -c Release -o out
+
 FROM mcr.microsoft.com/dotnet/aspnet:5.0
-WORKDIR /app
-COPY --from=publish /app .
-CMD dotnet PizzaCommand.dll
+WORKDIR /App
+EXPOSE 80
+COPY --from=build /APP/out .
+ENTRYPOINT ["dotnet", "PizzaCommand.dll"]
 
