@@ -112,6 +112,37 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "GET /Pizza",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8003/Pizza",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8003",
+					"path": [
+						"Pizza"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

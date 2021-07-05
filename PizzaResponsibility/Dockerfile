@@ -11,4 +11,4 @@ FROM mcr.microsoft.com/dotnet/aspnet:5.0
 WORKDIR /App
 EXPOSE 80
 COPY --from=build /APP/out .
-ENTRYPOINT ["dotnet", "PizzaCommand.dll"]
+ENTRYPOINT ["dotnet", "PizzaResponsibility.dll"]

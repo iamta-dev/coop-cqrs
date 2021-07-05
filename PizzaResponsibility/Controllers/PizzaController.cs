@@ -1,12 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using PizzaQuery.Models;
-using PizzaQuery.Services;
+using PizzaResponsibility.Models;
+using PizzaResponsibility.Services;
 using System;
-using System.Threading.Tasks;
 
-namespace PizzaQuery.Controllers
+namespace PizzaResponsibility.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -17,17 +16,18 @@ namespace PizzaQuery.Controllers
         }
 
         [HttpGet]
-        public Task<string> Getdata()
-        {
-            return PizzaService.Receive();
-        }
+        public ActionResult<List<DotPizza>> GetAll() => PizzaService.GetAll();
 
         [HttpGet("{id}")]
-        public Task<string> GetdataOne(int id)
+        public ActionResult<DotPizza> Get(int id)
         {
-            return PizzaService.ReceiveOne(id);
-        }
+            var pizza = PizzaService.Get(id);
 
+            if (pizza == null)
+                return NotFound();
+
+            return pizza;
+        }
         [HttpPost]
         public IActionResult Received(Pizza newPizza)
         {
